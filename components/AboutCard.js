@@ -1,31 +1,57 @@
+import { AcademicCapIcon, BriefcaseIcon, SparklesIcon, ShieldCheckIcon } from "@heroicons/react/24/solid";
+
 export default function AboutCard() {
   return (
-    <section className="max-w-xl mx-auto my-8 p-6 bg-white rounded shadow">
-      <h2 className="text-2xl font-bold mb-2">About Me</h2>
-      <p className="mb-4">
-        Hi! I’m Hariom Bangali, an aspiring <span className="font-semibold text-blue-600">MERN Stack Developer</span> with a passion for learning and creating innovative web applications. My journey in technology began with my <span className="font-medium">Bachelor of Computer Applications (BCA)</span>, which I started in 2021 and successfully completed in 2024. Currently, I am further strengthening my foundation and knowledge through a <span className="font-medium">Master of Computer Applications (MCA)</span> program, which I began in 2024.
-      </p>
-      <p className="mb-4">
-        In January 2025, I started an intensive internship focused on the <span className="font-semibold text-green-700">MERN stack</span>. Through this hands-on experience, I’ve worked on two meaningful projects, building proficiency in <span className="font-medium">HTML, JavaScript, CSS, React, Node.js, Express, and MongoDB</span>. This has given me 6 months of real-world project experience, sharpening both my coding and problem-solving abilities.
-      </p>
-      <p className="mb-4">
-        While my curiosity for technology also draws me towards ethical hacking and security, my current focus is launching my career in web development. I enjoy building seamless user interfaces and robust backend systems, and I am eager to join a dynamic team where I can keep learning and contribute my growing skill set. I thrive on challenges, value teamwork, and always strive to stay updated with the latest in tech.
-      </p>
-      {/* Skills or Timeline example */}
-      <ul className="mt-4 text-sm text-gray-700 space-y-2">
-        <li>
-          🎓 <span className="font-semibold">Education:</span> BCA (2021–2024), MCA (2024–Present)
-        </li>
-        <li>
-          💻 <span className="font-semibold">Key Skills:</span> MERN Stack, HTML, CSS, JavaScript, React, Node.js, Express, MongoDB
-        </li>
-        <li>
-          🚀 <span className="font-semibold">Internship:</span> 6 months MERN Stack Development, 2 major projects
-        </li>
-        <li>
-          🛡️ <span className="font-semibold">Interest:</span> Tech & Hacking (Ethical), staying updated with the latest in web tech
-        </li>
-      </ul>
+    <section className="relative max-w-2xl mx-auto my-12">
+      {/* Fancy blurred gradient background shape */}
+      <div
+        aria-hidden="true"
+        className="absolute -top-12 -right-20 h-72 bg-gradient-to-tr from-blue-400 via-violet-500 to-fuchsia-400 rounded-full opacity-25 blur-2xl"
+      />
+      <div className="relative z-10 rounded-2xl bg-white/80 dark:bg-gray-900/80 shadow-xl backdrop-blur-lg p-8 border border-gray-200 dark:border-gray-700">
+        <div className="flex items-center mb-3">
+          <SparklesIcon className="h-9 w-9 text-purple-500 bg-white bg-opacity-60 p-1 rounded-full shadow" />
+          <h2 className="ml-3 text-3xl font-bold bg-gradient-to-r from-blue-700 via-purple-600 to-pink-500 text-transparent bg-clip-text drop-shadow">
+            About Me
+          </h2>
+        </div>
+        <p className="text-lg leading-relaxed text-gray-800 dark:text-gray-100 mb-4">
+          Hi! I’m <span className="font-semibold text-blue-900 dark:text-blue-200">Hariom Bangali</span>, a passionate <span className="font-semibold text-blue-700">MERN Stack Developer</span> eager to craft innovative digital experiences. I hold a <b>BCA</b> (2021–2024) and am pursuing <b>MCA</b> (2024–Present), blending solid academic foundations with real-world coding.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3 text-gray-900 dark:text-gray-100">
+          <div className="flex gap-3 items-start bg-blue-50 dark:bg-blue-950/50 rounded-lg p-3">
+            <AcademicCapIcon className="h-6 w-6 text-blue-500" />
+            <div>
+              <div className="font-semibold">Education</div>
+              <div className="text-sm">BCA (2021–2024), MCA (2024–Present)</div>
+            </div>
+          </div>
+          <div className="flex gap-3 items-start bg-green-50 dark:bg-green-950/40 rounded-lg p-3">
+            <BriefcaseIcon className="h-6 w-6 text-green-500" />
+            <div>
+              <div className="font-semibold">Experience</div>
+              <div className="text-sm">6 months MERN Internship (2025), 2 major projects</div>
+            </div>
+          </div>
+          <div className="flex gap-3 items-start bg-yellow-50 dark:bg-yellow-900/40 rounded-lg p-3">
+            <ShieldCheckIcon className="h-6 w-6 text-yellow-600" />
+            <div>
+              <div className="font-semibold">Interests</div>
+              <div className="text-sm">Ethical Hacking, Latest Web Tech</div>
+            </div>
+          </div>
+          <div className="flex gap-3 items-start bg-pink-50 dark:bg-pink-900/40 rounded-lg p-3">
+            <SparklesIcon className="h-6 w-6 text-pink-500" />
+            <div>
+              <div className="font-semibold">Skills</div>
+              <div className="text-sm">React, Node.js, Express, MongoDB, HTML, CSS, JavaScript</div>
+            </div>
+          </div>
+        </div>
+        <p className="text-gray-700 dark:text-gray-300 mt-4 text-base">
+          I thrive on challenges and continuous learning, aiming to join a vibrant team where I can keep growing and deliver real value. Although I’m fascinated by security and tech hacking, my current focus is web development!
+        </p>
+      </div>
     </section>
-  )
+  );
 }
