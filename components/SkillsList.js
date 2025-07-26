@@ -13,7 +13,7 @@ export default function SkillsList() {
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
     { name: "Git", icon: <SiGit className="text-red-500" /> },
   ];
-
+  
   return (
     <section className="max-w-3xl mx-auto my-12 px-4">
       <div className="mb-5 text-center">
