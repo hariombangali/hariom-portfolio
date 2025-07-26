@@ -7,7 +7,7 @@ export default function AboutCard() {
       {/* Fancy blurred gradient background shape */}
       <div
         aria-hidden="true"
-        className="absolute -top-12 -right-20 h-72 w-72 bg-gradient-to-tr from-blue-400 via-violet-500 to-fuchsia-400 rounded-full opacity-25 blur-2xl"
+        className="absolute -top-12 -right-20 h-72 bg-gradient-to-tr from-blue-400 via-violet-500 to-fuchsia-400 rounded-full opacity-25 blur-2xl"
       />
       <div className="relative z-10 rounded-2xl bg-white/80 dark:bg-gray-900/80 shadow-xl backdrop-blur-lg p-8 border border-gray-200 dark:border-gray-700 overflow-visible">
         {/* Profile Image */}
