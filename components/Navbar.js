@@ -105,9 +105,9 @@ export default function Navbar() {
       >
         <div className="flex flex-col md:hidden flex-1">
           {/* Theme toggle at top of mobile menu */}
-          <div className="flex justify-end pr-4 pb-3">
+          {/* <div className="flex justify-end pr-4 pb-3">
             <DarkModeToggle />
-          </div>
+          </div> */}
           <ul className="flex flex-col gap-1 py-2 px-4">
             {navLinks.map((link) => (
               <li key={link.href}>
